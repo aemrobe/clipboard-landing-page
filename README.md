@@ -30,7 +30,7 @@ filepath for the screenshot of my solution in mobile-view: screenshot for my sol
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/responsive-clipboard-landing-page-by-css-flexbox-and-css-grid-rkBhmfJ4c)
+- Solution URL: [solution url](https://www.frontendmentor.io/solutions/responsive-clipboard-landing-page-by-css-flexbox-and-css-grid-rkBhmfJ4c)
 - Live Site URL: [live site URL ](https://aemrobe.github.io/clipboard-landing-page/)
 
 ## My process
