@@ -1,0 +1,426 @@
+@font-face {
+  font-family: "baijamjuree-semi-bold";
+  /*600*/
+  src: url(./font-baijamjuree/BaiJamjuree-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "baijamjuree-regular";
+  src: url(./font-baijamjuree/BaiJamjuree-Regular.ttf);
+  /*400*/
+}
+
+/*custom properties*/
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  /*font-size*/
+  --fs-200: 1.125rem;
+  /*18px*/
+  /*font-family*/
+  --ff-baijamure-semibold: "baijamjuree-semi-bold";
+  --ff-baijamure-regular: "baijamjuree-regular";
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*responsive fluid image*/
+img {
+  max-width: 100%;
+}
+
+/* utility classes */
+.mt-100 {
+  margin-top: 5.6rem !important;
+  /*89.6px*/
+}
+
+.mb-100 {
+  margin-bottom: 10.3125rem;
+  /*165px*/
+}
+
+.mb-150 {
+  margin-bottom: 6.25rem !important;
+  /*100px*/
+}
+
+.ml-100 {
+  margin-left: 40px !important;
+}
+
+.ml-100 {
+  margin-right: 40px !important;
+}
+
+.mb-200 {
+  margin-bottom: 20.75rem;
+  /*332px*/
+}
+
+.max-width-100 {
+  max-width: 310px !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.sr-only {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  left: -100px;
+}
+
+body {
+  font-family: var(--ff-baijamure-regular);
+  font-size: var(--fs-200);
+  color: var(--Dark-Grayish-Blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-align: center;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  font-size: 16px;
+}
+
+header {
+  text-align: center;
+  padding: 122px 0 71px 0;
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-title {
+  font-family: var(--ff-baijamure-semibold);
+  margin: 0 34px;
+  line-height: 1.25;
+  text-align: center;
+  font-size: 28px;
+  margin: 24px 0;
+}
+
+.main-text {
+  line-height: 1.6;
+  text-align: center;
+  max-width: 702px;
+  margin: 0 33px 49px;
+  font-size: 16px;
+}
+
+.main-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-btn {
+  padding: 21px 78px;
+  border-radius: 100px;
+  background-color: var(--strong-cyan);
+  font-family: var(--ff-baijamure-semibold);
+  color: white;
+  font-size: var(--fs-200);
+  transition: opacity 0.5s ease;
+}
+
+.main-btn:hover {
+  opacity: 0.75;
+}
+
+.main-btn + .main-btn {
+  margin-top: 24px;
+  background-color: var(--Light-Blue);
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-title {
+  font-family: var(--ff-baijamure-semibold);
+  margin: 0 64px 23px;
+}
+
+.service-text {
+  max-width: 585.333px;
+  margin: 0 36px 4.0625rem;
+  /*0 auto 65px*/
+  line-height: 1.6;
+}
+
+.task-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 135px;
+}
+
+.task {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-title {
+  font-family: var(--ff-baijamure-semibold);
+  font-size: 23px;
+  margin-bottom: 16px;
+}
+
+.task-text {
+  max-width: 480px;
+  margin: 0 2rem 3.6875rem;
+  /*0 32px 59px*/
+  line-height: 1.6;
+}
+
+.device-image {
+  display: flex;
+  justify-content: center;
+  margin: 0 30px 61px;
+  /*0 1.875rem 3.8125rem*/
+}
+
+.task-icon {
+  display: block;
+  margin: 0 auto 2.8125rem;
+  /*0 auto 45px*/
+}
+
+.task-2 {
+  margin-bottom: 4.5rem;
+  /*72px*/
+}
+
+.companies {
+  margin-bottom: 6.8125rem;
+  /*109px*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company {
+  margin-bottom: 4rem;
+  /*64px*/
+}
+
+footer {
+  padding-top: 3.1875rem; /*51px*/
+  --Grayish-Blue: hsl(201, 0%, 95%);
+  background: var(--Grayish-Blue);
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-item * {
+  margin-bottom: 1.875rem;
+  /*30px*/
+}
+
+footer .logo {
+  display: block;
+  margin: 3.1875rem auto 2.3125rem;
+  /*51px auto 47px*/
+  height: 55px;
+}
+
+.footer-item a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+  font-family: var(--ff-baijamure-semibold);
+}
+
+.social-media-icons {
+  margin: 1.5rem 0 3.125rem;
+  /*24px 0 50px*/
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icon + .social-media-icon {
+  margin-left: 39px;
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  color: black;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .main-text {
+    margin: 0 auto 49px;
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-title {
+    font-family: var(--ff-baijamure-semibold);
+    margin: 0 34px;
+    line-height: 1.25;
+    text-align: center;
+    font-size: 38px;
+    margin: 24px 0;
+  }
+
+  .main-text {
+    margin: 0 auto 49px;
+    max-width: 700px;
+    font-size: 20px;
+  }
+
+  .main-btns {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 156px;
+  }
+
+  .main-btn + .main-btn {
+    margin-top: 0;
+    margin-left: 12px;
+    background-color: var(--Light-Blue);
+  }
+
+  .service-title {
+    font-size: 30px;
+    font-family: var(--ff-baijamure-semibold);
+  }
+
+  .service-text {
+    max-width: 670px;
+    font-size: 17.5px;
+    line-height: 1.63;
+  }
+
+  .task-1 {
+    max-width: 1528px;
+    flex-direction: row;
+    justify-content: left;
+    margin: 0 auto 156px;
+  }
+
+  .task-1 .task {
+    align-items: flex-start;
+  }
+
+  .task-1 .task-title {
+    text-align: left;
+  }
+
+  .task-1 .task-text {
+    text-align: left;
+    margin: 0 0 3.6875rem;
+    max-width: 338px;
+  }
+
+  .device-image {
+    margin: 0 6.5625rem 0 0;
+    /*0 105px 0 0*/
+  }
+
+  .task-2 {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .task-2 .task:nth-child(1) .task-icon {
+    margin-top: 0 !important;
+    margin-bottom: 36.5px;
+  }
+
+  .task-2 .task-text {
+    margin: 0 2.625rem 10.5rem 0;
+    max-width: 345px;
+  }
+
+  .companies {
+    margin-bottom: 0px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .company {
+    margin-bottom: 10.1875rem;
+    margin: 0 6rem 10.1875rem 0;
+    /*163px*/
+  }
+
+  .footer-item-lists {
+    padding: 2.6875rem 10.1875rem 0.75rem; /*51px 163px 0*/
+    display: grid;
+    justify-content: start;
+    grid-template-columns: repeat(2, auto) 1fr;
+  }
+
+  footer .logo {
+    display: block;
+    margin: 0 8.375rem 2.3125rem 0;
+    /*0 134px 47px*/
+    height: 55px;
+  }
+
+  .footer-items {
+    display: flex;
+  }
+
+  .footer-item + .footer-item {
+    margin-left: 96px;
+  }
+
+  .social-media-icons {
+    margin-left: auto;
+  }
+
+  .attribution {
+    margin-top: 0.75rem;
+    grid-column: span 3;
+  }
+}
+
+@media (min-width: 1441px) {
+  .task-1 .device-image {
+    margin: 0;
+  }
+  .task-1 .wrapper {
+    margin: 0 auto;
+  }
+}
