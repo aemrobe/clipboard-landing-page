@@ -60,6 +60,10 @@ img {
   margin-right: 40px !important;
 }
 
+.mr-0{
+  margin-right: 0 !important;
+}
+
 .mb-200 {
   margin-bottom: 20.75rem;
   /*332px*/
